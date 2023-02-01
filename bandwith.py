@@ -11,6 +11,15 @@ option = int(input('''Select your option:
 if option < 1 or option > 4:
     sleep(2)
     print('🤖 Sorry, you have entered the wrong option')
+else:
+    sleep(1)
+    print()
+    print('Please wait test in progress...⌛️')
+    download_speed = round(speed.download()/1000000, 3)
+    upload_speed = round(speed.upload()/1000000, 3)
+    print('One moment please 🙂')
+    sleep(2.5)
+    print()
 
     
     if option == 1:
